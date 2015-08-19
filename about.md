@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi!
+
+### Jobs
+
+Web front-end developer leader of wangxiao in hujiang company
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[lijia@hujiang.com](mailto:lijia@hujiang.com)
+
+QQ: 835898749
