@@ -1,0 +1,23 @@
+---
+layout: post
+title: 转化成amd
+---
+
+```html
+<script>
+	(function (factory) {
+		if (typeof define === 'function' && define.amd) {
+			// AMD (Register as an anonymous module)
+			define(['jquery'], factory);
+		} else if (typeof exports === 'object') {
+			// Node/CommonJS
+			module.exports = factory(require('jquery'));
+		} else {
+			// Browser globals
+			factory(jQuery);
+		}
+	}(function($){
+		// 待转化库
+	}));
+</script>
+```
