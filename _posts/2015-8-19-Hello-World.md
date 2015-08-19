@@ -5,6 +5,7 @@ title: 转化成amd
 
 
 > Object.getOwnPropertyDescriptor 获取描述属性特性的描述符对象
+
 ```js
 // Create a user-defined object.
 var obj = {};
@@ -20,6 +21,7 @@ descriptor.writable = false;
 Object.defineProperty(obj, "newDataProperty", descriptor);
 ```
 > Object.defineProperty 用于添加或修改属性
+
 ```js
 var _createClass = (function() {
 	function defineProperties(target, props) {
@@ -38,3 +40,4 @@ var _createClass = (function() {
 	};
 })();
 ```
+[查看MDN官方文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
