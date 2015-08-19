@@ -116,7 +116,8 @@ img {
 }
 
 .date {
-  font-style: italic;
+  float: right;
+  font-size: 14px;
   color: $gray;
 }
 
@@ -253,12 +254,11 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
+      margin: 1.8em 0;
+  border-left: 4px solid #29B4F0;
+  padding: 0px 0.5em;
+  color: #666;
+  font-size: 16px;
   }
 
   .comments {
