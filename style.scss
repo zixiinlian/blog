@@ -288,13 +288,13 @@ footer {
 #siderBar{
   position: absolute;
   right: 0;
-  border-left: 1px solid $lightGray;
+  // border-left: 1px solid $lightGray;
   width: 230px;
   padding-left: 20px;
   height: 100%;
 }
 .article-panel{
-  padding-right: 260px;
+  padding-right: 230px;
   h3{
       margin: 12px 0 22px 0;
   }
