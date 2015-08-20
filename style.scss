@@ -298,6 +298,9 @@ footer {
 }
 .article-panel{
   padding-right: 260px;
+  h3{
+      margin: 12px 0 22px 0;
+  }
 }
 .category-list{
   list-style-type: none;
@@ -322,6 +325,9 @@ footer {
   float: right;
   font-size: 14px;
   color: #666;
+}
+.category-list a:hover .my-badge{
+  color: #fff;
 }
 .main{
     min-height: 700px;
