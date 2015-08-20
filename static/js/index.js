@@ -92,10 +92,10 @@ function categoryDisplay() {
         var cate = $(this).attr('cate'); //get category's name
 
         if(cate === 'All'){
-            $('.post-list-body>div').show();
+            $('.post-list-body article').show();
         }else{
-            $('.post-list-body>div[post-cate!=' + cate + ']').hide();
-            $('.post-list-body>div[post-cate=' + cate + ']').show();
+            $('.post-list-body>div[data-category!=' + cate + ']').hide();
+            $('.post-list-body>div[data-category=' + cate + ']').show();
         }
     });
 }
