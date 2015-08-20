@@ -3,10 +3,8 @@ layout: default
 ---
 
 <div class="posts post-list-body">
-  {% for category in site.categories %}
-  	<div post-cate="{{category | first}}">
-    {% for posts in category  %}
-      {% for post in posts %}
+	<div class="all-posts" post-cate="All">
+      {% for post in site.posts %}
         <article class="post">
 	      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 	      <div class="entry">
@@ -16,6 +14,18 @@ layout: default
 	      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 	    </article>
       {% endfor %}
+    </div>
+  {% for category in site.categories %}
+  	<div post-cate="{{category | first}}">
+    {% for post in category.last  %}
+        <article class="post">
+	      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	      <div class="entry">
+	        {{ post.excerpt }}
+	      </div>
+	      <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+	      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	    </article>
     {% endfor %}
   </div>
 {% endfor %}
