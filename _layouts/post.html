@@ -11,14 +11,15 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+	
+	<div class="pagination">
+	  {% if page.next %}
+	    <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">上一篇</a>
+	  {% endif %}
+	  {% if page.previous %}
+	    <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">下一篇</a>
+	  {% endif %}
+	</div>
 
   {% include disqus.html %}
 </article>
-<div class="pagination">
-  {% if page.next %}
-    <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a>
-  {% endif %}
-  {% if page.previous %}
-    <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
-  {% endif %}
-</div>
