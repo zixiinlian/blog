@@ -290,3 +290,14 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+#siderBar{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: #F8F8FD;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4),0 0 20px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.4),0 0 20px rgba(0,0,0,0.1) inset;
+  -o-box-shadow: 0 1px 5px rgba(0,0,0,0.4),0 0 20px rgba(0,0,0,0.1) inset;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4),0 0 20px rgba(0, 0, 0, 0.1) inset;
+}
