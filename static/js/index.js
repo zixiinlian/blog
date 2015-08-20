@@ -59,7 +59,6 @@ function fixFooter(footerHeight, footerMarginTop) {
     // console.log("$('body>.container').offset().top----"+$('body>.container').offset().top);
     // console.log("footerHeight---"+footerHeight);
     // console.log("footerMarginTop---"+footerMarginTop);
-    console.log(contentHeight);
     if (contentHeight < windowHeight) {
         $('footer').addClass('navbar-fixed-bottom');
     } else {
@@ -89,13 +88,17 @@ function getFooterMarginTop() {
  */
 function categoryDisplay() {
     /*only show All*/
-    $('.post-list-body>div[post-cate!=All]').hide();
+    $('.post-list-body>div').hide();
     /*show category when click categories list*/
     $('.categories-list-item').click(function() {
         var cate = $(this).attr('cate'); //get category's name
 
-        $('.post-list-body>div[post-cate!=' + cate + ']').hide();
-        $('.post-list-body>div[post-cate=' + cate + ']').show();
+        if(cate === 'All'){
+            $('.post-list-body>div').show();
+        }else{
+            $('.post-list-body>div[post-cate!=' + cate + ']').hide();
+            $('.post-list-body>div[post-cate=' + cate + ']').show();
+        }
     });
 }
 
