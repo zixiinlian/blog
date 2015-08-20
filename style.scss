@@ -25,9 +25,10 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1000px;
   padding: 0 10px;
   width: 100%;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -238,10 +239,6 @@ nav {
   }
 }
 
-//
-// .main
-//
-
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -295,9 +292,9 @@ footer {
   position: fixed;
   top: 30px;
   right: 30px;
-  background-color: #F8F8FD;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4),0 0 20px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.4),0 0 20px rgba(0,0,0,0.1) inset;
-  -o-box-shadow: 0 1px 5px rgba(0,0,0,0.4),0 0 20px rgba(0,0,0,0.1) inset;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4),0 0 20px rgba(0, 0, 0, 0.1) inset;
+  border-left: 1px solid #EEE;
+  width: 300px;
+}
+.article-panel{
+  padding-right: 300px;
 }
