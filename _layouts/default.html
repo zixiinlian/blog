@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.category }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
@@ -16,7 +16,6 @@
   </head>
 
   <body>
-    {% include category.html %}
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -36,6 +35,7 @@
     </div>
 
     <div id="main" role="main" class="container">
+      {% include category.html %}
       {{ content }}
     </div>
 
