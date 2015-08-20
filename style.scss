@@ -306,7 +306,23 @@ footer {
 }
 .category-list a{
   display: block;
-  height: 20px;
-  line-height: 20px;
+  height: 30px;
+  line-height: 30px;
   color: #333;
+  background: #F8F8F8;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.category-list a:hover{
+  background: #29B4F0;
+  color: #fff;
+}
+.category-list a .my-badge{
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+.main{
+    min-height: 700px;
 }
