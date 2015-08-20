@@ -87,8 +87,6 @@ function getFooterMarginTop() {
  * @return {[type]} [description]
  */
 function categoryDisplay() {
-    /*only show All*/
-    $('.post-list-body>div').hide();
     /*show category when click categories list*/
     $('.categories-list-item').click(function() {
         var cate = $(this).attr('cate'); //get category's name
