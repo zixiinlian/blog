@@ -3,17 +3,20 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.categories[$.query.get("tag")] %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+  {% for category in site.categories %}
+  	<div post-cate="{{category | first}}">
+    {% for posts in category  %}
+      {% for post in posts %}
+        <article class="post">
+	      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	      <div class="entry">
+	        {{ post.excerpt }}
+	      </div>
+	      <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+	      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	    </article>
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% endfor %}
 </div>
