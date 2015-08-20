@@ -1,17 +1,9 @@
----
-layout: default
----
-
-<article class="post">
-  <h3>{{ page.title }}</h3>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+<div class="posts">
+  {% for category in site.categories %}
+    <article class="category">
+      <ul>
+      	<li>导航</li>
+      </ul>
+    </article>
+  {% endfor %}
+</div>
