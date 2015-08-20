@@ -94,8 +94,8 @@ function categoryDisplay() {
         if(cate === 'All'){
             $('.post-list-body article').show();
         }else{
-            $('.post-list-body>div[data-category!=' + cate + ']').hide();
-            $('.post-list-body>div[data-category=' + cate + ']').show();
+            $('.post-list-body>article[data-category!=' + cate + ']').hide();
+            $('.post-list-body>article[data-category=' + cate + ']').show();
         }
     });
 }
