@@ -2,7 +2,7 @@
   {% for category in site.categories %}
     <article class="category">
       <ul>
-      	<li><a href="/blog/default.html?cate={{category | first}}">{{category | first}}</a></li>
+      	<li><a href="/blog/?cate={{category | first}}">{{category | first}}</a></li>
       </ul>
     </article>
   {% endfor %}
