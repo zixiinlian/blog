@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: #F6F6F1;
+	background: #F8F8F9;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -66,7 +66,7 @@ h4 {
 
 p {
   margin: 15px 0;
-  line-height: 22px;
+  line-height: 30px;
 }
 
 a {
@@ -119,7 +119,7 @@ img {
 .date {
   float: right;
   font-size: 14px;
-  color: $gray;
+  color: #53A1B8;
 }
 
 // Specify the color of the selection
@@ -154,11 +154,11 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+    border-bottom: 4px solid #53A1B8;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 15px 0;
 
   @include mobile {
     text-align: center;
@@ -251,9 +251,9 @@ nav {
 .post {
   blockquote {
       margin: 1.8em 0;
-  border-left: 4px solid #29B4F0;
+  border-left: 4px solid #53A1B8;
   padding: 0px 0.5em;
-  color: #666;
+  color: #53A1B8;
   font-size: 16px;
   }
 
@@ -277,7 +277,8 @@ footer {
   text-align: center;
 }
 .entry{
-  font-size: 14px;
+  font-size: 15px;
+  color: #666A76;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
@@ -312,16 +313,16 @@ footer {
   background: #fff;
   margin-bottom: 5px;
   padding: 0 10px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .category-list a:hover{
-  background: #29B4F0;
+  background: #53A1B8;
   color: #fff;
 }
 .category-list a .my-badge{
   float: right;
   font-size: 14px;
-  color: #666;
+  color: #B3B3B3;
 }
 .category-list a:hover .my-badge{
   color: #fff;
