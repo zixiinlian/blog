@@ -205,6 +205,7 @@ img {
 }
 .site-name a{
     font-size: 30px;
+      color: #21A3C9;
   } 
 
 .site-description {
@@ -231,11 +232,13 @@ nav {
   }
 
   a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+      margin-left: 47px;
+  color: #333;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #21A3C9;
 
     @include mobile {
       margin: 0 10px;
