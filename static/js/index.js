@@ -16,6 +16,13 @@ $(document).ready(function() {
  * @return {[type]} [description]
  */
 function categoryDisplay() {
+    
+    if(location.hash){
+        var cate = location.hash;
+        $('.post-list-body>article[data-category!=' + cate + ']').hide();
+        $('.post-list-body>article[data-category=' + cate + ']').show();
+    }
+    
     /*show category when click categories list*/
     $('.categories-list-item').click(function() {
         var cate = $(this).attr('cate'); //get category's name
