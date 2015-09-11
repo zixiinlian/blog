@@ -18,11 +18,11 @@ $(document).ready(function() {
 function categoryDisplay() {
     
     if(location.hash){
-        var cate = location.hash;
+        var cate = location.hash.replace('#','');
         $('.post-list-body>article[data-category!=' + cate + ']').hide();
         $('.post-list-body>article[data-category=' + cate + ']').show();
     }
-    
+
     /*show category when click categories list*/
     $('.categories-list-item').click(function() {
         var cate = $(this).attr('cate'); //get category's name
