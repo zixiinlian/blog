@@ -12,10 +12,9 @@ Web front-end developer leader of wangxiao in hujiang company
 
 ### More Information
 
-weibo  @Lee_FeDev
 
 ### Contact me
 
-[lijia@hujiang.com](mailto:lijia@hujiang.com)
+[jialee63@hotmail.com](mailto:jialee63@hotmail.com)
 
 QQ: 835898749
